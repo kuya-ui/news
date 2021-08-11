@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flask BBC English News</title>
+</head>
+<body>
+    <div class="jumbotron" style="color:black">
+        <h1 style="color:black">
+            Flask Simple News Web Application
+        </h1>
+    </div>
+
+    <div class="container">
+        {% for new, des, i in context %}
+
+        <img src="{{i}}" alt="">
+        <h3>News:</h3>{{new}}
+        <h4>Description</h4> {{des}}
+
+        {% endfor %}
+    </div>
+</body>
+</html>
